@@ -1,0 +1,10 @@
+<h1><%= @item.name %></h1>
+<br />
+<h3><%= @item.description %>
+<h3><%= @item.complete %>
+
+<%= link_to 'Edit', edit_item_path(@item) %>
+
+<%= link_to 'Delete', item_path(@item), method: :delete %>
+
+<%= link_to 'All Items', items_path %>
